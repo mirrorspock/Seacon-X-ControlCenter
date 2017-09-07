@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @activator.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @activator.description %>
+</p>
+
+<p>
+  <strong>Commandline:</strong>
+  <%= @activator.commandline %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @activator.color %>
+</p>
+
+<%= link_to 'Edit', edit_activator_path(@activator) %> |
+<%= link_to 'Back', activators_path %>

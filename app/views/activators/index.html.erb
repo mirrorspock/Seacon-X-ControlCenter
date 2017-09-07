@@ -1,0 +1,68 @@
+<p id="notice"><%= notice %></p>
+
+<div class="iphone">
+  <div class="screen">
+      <% @activators.each do |activator| %>
+        <!-- <button class="icon"title="<%= activator.name %>"><%= activator.name %></button> -->
+
+<!--        <span><%= activator.description %></span>
+        <span><%= activator.commandline %></span>
+        <span><%= activator.color %></span>
+        <span><%= link_to 'Show', activator %></span>
+        <span><%= link_to 'Edit', edit_activator_path(activator) %></span>
+        <span><%= link_to 'Destroy', activator, method: :delete, data: { confirm: 'Are you sure?' } %></span>
+ -->
+      <% end %>
+            
+      <button class="icon">Start<br />Presentation</button>
+      <button class="icon">&larr;</button>
+      <button class="icon">&rarr;</button>
+      <button class="icon">GoTo</button>
+
+      <button class="icon">Light</button>
+      <button class="icon">Max</button>
+      <button class="icon">Presentation</button>
+      <button class="icon">Demo</button>
+
+      <button class="icon">Sound</button>
+      <button class="icon">&larr;</button>
+      <button class="icon">&rarr;</button>
+      <button class="icon">Ambiance</button>
+
+      <button class="icon">All Pillars</button>
+      <button class="icon">Pillar<br />1</button>
+      <button class="icon">Pillar<br />2</button>
+      <button class="icon">Pillar<br />3</button>
+
+      <button class="icon">Settings</button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon">Change Logo</button>
+      
+      <button class="icon">Welcome</button>
+      <button class="icon">Start</button>
+      <button class="icon">&larr;</button>
+      <button class="icon">&rarr;</button>
+      
+      
+      
+  <button class="home" title="Home"><%= link_to '+', new_activator_path %></button>
+  <span class="speaker" title="Speaker"></span>
+  <span class="camera" title="Camera"></span>
+  <span class="proximity" title="Proximity Sensor"></span>
+
+  <button class="silence" title="Silence Switch"></button>
+  <button class="volume-up" title="Volume Up"></button>
+  <button class="volume-down" title="Volume Down"></button>
+  <button class="sleep" title="Sleep"></button>
+
+  </div>
+</div>
+
+<!-- <div class="iphone">
+  <div class="screen">
+    <button class="add"><%= link_to '+', new_activator_path %></button>
+</div>
+</div>
+-->
+

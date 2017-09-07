@@ -1,0 +1,2 @@
+module ActivatorsHelper
+end

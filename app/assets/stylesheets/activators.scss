@@ -1,0 +1,147 @@
+// Place all the styles related to the Activators controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+$white: #fff;
+$athens-gray: #f7f8fa;
+$shuttle-gray: #525c6b;
+$indigo: #3f74ca;
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.screen {
+  background-color: $indigo;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.5vh;
+  width: 36vh;
+  background: linear-gradient(to top,
+      lighten($indigo, 8%) 11.5vh, $indigo 11.5vh);
+}
+
+.icon {
+  width: 6vh;
+  height: 6vh;
+  border-radius: 1.5vh;
+  background-color: $athens-gray;
+  margin: 1.5vh;
+}
+
+.icon:active {
+  opacity: 0.75;
+}
+
+.icon:nth-last-of-type(-n+4) {
+  margin-top: 3vh;
+}
+
+button {
+  border: none;
+  padding: 0;
+  outline: none;
+  background-color: transparent;
+  user-select: none;
+}
+
+span {
+  box-sizing: border-box;
+}
+
+.iphone, .screen {
+  border: 0.5vh solid $shuttle-gray;
+}
+
+.iphone {
+  position: relative;
+  
+  padding: 10vh 1.5vh;
+  border-radius: 6vh;
+}
+
+.home, .camera, .proximity, .speaker, .silence, .volume-up, .volume-down, .sleep {
+  position: absolute;
+}
+
+.home, .camera, .proximity {
+  border-radius: 50%;
+}
+
+.speaker, .silence, .volume-up, .volume-down, .sleep, .proximity {
+  background-color: $shuttle-gray;
+}
+
+.home, .speaker, .camera, .proximity {
+  left: 50%;
+}
+
+.home, .speaker {
+  margin-left: -3vh;
+  width: 6vh;
+}
+
+.home, .camera {
+  border: 0.5vh solid $shuttle-gray;
+}
+
+.home {
+  height: 6vh;
+  bottom: 2vh;
+}
+
+.speaker {
+  top: 4.75vh;
+  height: 0.5vh;
+  border-radius: 0.5vh;
+}
+
+.camera {
+  width: 1.5vh;
+  height: 1.5vh;
+  top: 4.25vh;
+  margin-left: -6.5vh;
+}
+
+.proximity {
+  width: 1vh;
+  height: 1vh;
+  top: 2vh;
+  margin-left: -0.5vh;
+}
+
+.silence, .volume-up, .volume-down, .sleep {
+  width: 0.5vh;
+}
+
+.volume-up, .volume-down, .sleep {
+  height: 5vh;
+}
+
+.silence, .volume-up, .volume-down {
+  left: -0.75vh;
+}
+
+.silence {
+  height: 3vh;
+  top: 10vh;
+}
+
+.volume-up, .sleep {
+  top: 17vh;
+}
+
+.volume-down {
+  top: 24vh;
+}
+
+.sleep {
+  right: -0.75vh;
+}
